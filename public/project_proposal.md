@@ -4,7 +4,7 @@ Second title: Unraveling the Secrets of Teyvat, One Traveler at a Time
 
 Logo:
 
-![favicon](../assets/icon.png)
+![favicon](../assets/icon.png) 
 
 ### Description
 This website aims to help Genshin Impact players navigate their way to success in the game. This site will include character information, how to build said characters, tips, tutorials, and the nations of Teyvat. This can act as a helpful guide to starting (or improving) in Genshin if a player finds it hard to understand. 

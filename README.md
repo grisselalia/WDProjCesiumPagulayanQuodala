@@ -26,3 +26,13 @@ This website aims to help Genshin Impact players navigate their way to success i
 3. Character Information: When a user hovers above a character, their information will be shown along with a link to the Builds webpage and their specific building guide. 
 
 ### Wireframes
+![alt text](image-3.png)
+![alt text](image-1.png)
+#### when you click on the nation icon
+![alt text](image-2.png)
+![alt text](image-4.png)
+#### when you click on character icon
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+

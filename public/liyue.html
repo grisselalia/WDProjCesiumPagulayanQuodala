@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website Layout – Liyue (Zhongli Palette)</title>
+<style>
+  :root {
+    /* Zhongli / Liyue Color Palette */
+    --deep-brown: #3B2E1E;
+    --gold: #C49A3A;
+    --light-gold: #E8D8A8;
+    --stone-gray: #A49A8D;
+    --warm-beige: #F4E9D8;
+    --amber: #DFAF54;
+    --dark-gold: #8C6A21;
+  }
+
+  body {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, var(--warm-beige), var(--amber), var(--gold));
+    color: var(--deep-brown);
+  }
+
+  header {
+    background: linear-gradient(90deg, var(--gold), var(--deep-brown));
+    padding: 40px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--warm-beige);
+  }
+
+  .nav {
+    background: linear-gradient(90deg, var(--amber), var(--gold));
+    padding: 15px;
+    text-align: center;
+    color: var(--warm-beige);
+    font-size: 1.2rem;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-item {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: var(--warm-beige);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .nav-item:hover {
+    background: rgba(255,255,255,0.35);
+  }
+
+  .container {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    background: linear-gradient(135deg, var(--dark-gold), var(--gold));
+  }
+
+  .photo-box {
+    flex: 1;
+    background: linear-gradient(180deg, var(--warm-beige), var(--stone-gray));
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    color: var(--deep-brown);
+    font-size: 1.2rem;
+    border: 5px solid var(--gold);
+  }
+
+  .text-box {
+    flex: 2;
+    background: linear-gradient(160deg, var(--gold), var(--deep-brown));
+    color: var(--warm-beige);
+    border-radius: 25px;
+    padding: 40px;
+    font-size: 1.5rem;
+    border: 5px solid var(--stone-gray);
+  }
+
+  footer {
+    background: linear-gradient(90deg, var(--amber), var(--stone-gray));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  footer div {
+    flex: 1;
+    text-align: center;
+    color: var(--deep-brown);
+    background: var(--warm-beige);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--gold);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+    <img src="./assets/icon.png" alt="logo" style="height:70px; width:auto;">
+    <span>The Traveler's Guide to Teyvat</span>
+  </div>
+</header>
+
+<div class="nav">
+  <div class="nav-container">
+    <a class="nav-item" href="#">Home Page</a>
+    <a class="nav-item" href="#">Characters</a>
+    <a class="nav-item" href="#">Builds</a>
+    <a class="nav-item" href="#">Tips</a>
+    <a class="nav-item" href="#">Tutorials</a>
+    <a class="nav-item" href="#">Nations</a>
+    <a class="nav-item ask-source" href="#">Sources</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="photo-box">
+    <img src="https://i.redd.it/i-love-that-liyue-looks-so-beautiful-and-scenic-during-this-v0-beinjl5r2qe81.png?width=1915&format=png&auto=webp&s=ab2a410bee1f821b93667ce556f7a15247007a67" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+  </div>
+  <div class="text-box">
+    <h1>Liyue</h1>
+    <p>Mountains stand tall and proud alongside the stone forest, that together with the open plains and lively rivers make up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?</p>
+  </div>
+</div>
+
+<footer>
+  <div>download the app!</div>
+  <div>sources</div>
+  <div>Genshin socmed links</div>
+</footer>
+
+</body>
+</html>

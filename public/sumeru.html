@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website Layout</title>
+<style>
+  :root {
+    --dark: #1A3B2A;
+    --leaf: #4CAF50;
+    --mint: #DFFFE2; 
+    --cream: #F7FCE8; 
+    --sage: #B7C9A9; 
+    --brown: #8B7765; 
+    --greenGlow: #9AEC8A; 
+}
+
+  body {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, var(--cream), var(--mint), var(--leaf));
+    color: var(--dark);
+  }
+
+  header {
+    background: linear-gradient(90deg, var(--leaf), var(--dark));
+    padding: 40px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--cream);
+  }
+
+  .nav {
+    background: linear-gradient(90deg, var(--leaf), var(--greenGlow));
+    padding: 15px;
+    text-align: center;
+    color: var(--cream);
+    font-size: 1.2rem;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-item {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .nav-item:hover {
+    background: rgba(255,255,255,0.4);
+  }
+
+  .container {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    background: linear-gradient(135deg, var(--leaf), var(--mint));
+  }
+
+  .photo-box {
+    flex: 1;
+    background: linear-gradient(180deg, var(--cream), var(--sage));
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    color: var(--dark);
+    font-size: 1.2rem;
+    border: 5px solid var(--greenGlow);
+  }
+
+  .text-box {
+    flex: 2;
+    background: linear-gradient(160deg, var(--brown), var(--leaf));
+    color: var(--cream);
+    border-radius: 25px;
+    padding: 40px;
+    font-size: 1.5rem;
+    border: 5px solid var(--sage);
+  }
+
+  footer {
+    background: linear-gradient(90deg, var(--leaf), var(--sage));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  footer div {
+    flex: 1;
+    text-align: center;
+    color: var(--dark);
+    background: var(--mint);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--leaf);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+    <img src="./assets/icon.png" alt="logo" style="height:70px; width:auto;">
+    <span>The Traveler's Guide to Teyvat</span>
+  </div>
+</header>
+
+<div class="nav">
+  <div class="nav-container">
+    <a class="nav-item" href="#">Home Page</a>
+    <a class="nav-item" href="#">Characters</a>
+    <a class="nav-item" href="#">Builds</a>
+    <a class="nav-item" href="#">Tips</a>
+    <a class="nav-item" href="#">Tutorials</a>
+    <a class="nav-item" href="#">Nations</a>
+    <a class="nav-item ask-source" href="#">Sources</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="photo-box">
+    <img src="https://upload-os-bbs.hoyolab.com/upload/2022/09/23/170855775/e5b0b1970ea92e3e9bc977b5d3d2a934_902250151180328369.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+  </div>
+
+  <div class="text-box">
+    <h1>Sumeru</h1>
+    <p>The city of scholars located in the west-central part of Teyvat.
+A fantastical nation of both lush rainforest and barren desert, where countless fruits of wisdom grow and are buried. Whether Travelers travel from afar through the forest to reach the academy city or delve deep into the desert to discover the historical ruins of the red desert, a wealth of valuable knowledge awaits them here. </p>
+  </div>
+</div>
+
+<footer>
+  <div>download the app !</div>
+  <div>sources</div>
+  <div>Genshin socmed links</div>
+</footer>
+
+</body>
+</html>
+

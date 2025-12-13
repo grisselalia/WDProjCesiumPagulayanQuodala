@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website Layout</title>
+<style>
+  :root {
+    /* Furina / Fontaine color palette */
+    --dark: #0B1C2D;          /* Deep ocean blue */
+    --hydro: #2F7FBF;         /* Hydro blue */
+    --aqua: #6EC9E6;          /* Light water blue */
+    --mist: #EAF7FB;          /* Pale mist */
+    --silver: #B8C6D9;        /* Fontaine silver */
+    --navy: #1C3556;          /* Royal navy */
+    --glow: #8DE6FF;          /* Hydro glow */
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(135deg, var(--mist), var(--aqua), var(--hydro));
+    color: var(--dark);
+  }
+
+  header {
+    background: linear-gradient(90deg, var(--aqua), var(--navy));
+    padding: 40px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--mist);
+    text-shadow: 0 0 10px var(--glow);
+  }
+
+  .nav {
+    background: linear-gradient(90deg, var(--hydro), var(--aqua));
+    padding: 15px;
+    text-align: center;
+    color: var(--mist);
+    font-size: 1.2rem;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-item {
+    background: rgba(255,255,255,0.25);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: var(--mist);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .nav-item:hover {
+    background: rgba(255,255,255,0.45);
+  }
+
+  .container {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    background: linear-gradient(135deg, var(--aqua), var(--hydro));
+  }
+
+  .photo-box {
+    flex: 1;
+    background: linear-gradient(180deg, var(--mist), var(--silver));
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    color: var(--dark);
+    font-size: 1.2rem;
+    border: 5px solid var(--glow);
+  }
+
+  .text-box {
+    flex: 2;
+    background: linear-gradient(160deg, var(--navy), var(--hydro));
+    color: var(--mist);
+    border-radius: 25px;
+    padding: 40px;
+    font-size: 1.5rem;
+    border: 5px solid var(--silver);
+  }
+
+  footer {
+    background: linear-gradient(90deg, var(--hydro), var(--silver));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  footer div {
+    flex: 1;
+    text-align: center;
+    color: var(--dark);
+    background: var(--mist);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--hydro);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+    <img src="../assets/icon.png" alt="logo" style="height:70px; width:auto;">
+    <span>The Traveler's Guide to Teyvat</span>
+  </div>
+</header>
+
+<div class="nav">
+  <div class="nav-container">
+    <a class="nav-item" href="#">Home Page</a>
+    <a class="nav-item" href="#">Characters</a>
+    <a class="nav-item" href="#">Builds</a>
+    <a class="nav-item" href="#">Tips</a>
+    <a class="nav-item" href="#">Tutorials</a>
+    <a class="nav-item" href="#">Nations</a>
+    <a class="nav-item ask-source" href="#">Sources</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="photo-box">
+    <img src="https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Fontaine.png/revision/latest?cb=20230819002539" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+  </div>
+
+  <div class="text-box">
+    <h1>Fontaine</h1>
+    <p>The nation of justice and spectacle, where law and performance intertwine. Guided by the Hydro Archon Furina, Fontaine dazzles with elegance, drama, and the ever-flowing currents of truth.</p>
+  </div>
+</div>
+
+<footer>
+  <div>download the app !</div>
+  <div>sources</div>
+  <div>Genshin socmed links</div>
+</footer>
+
+</body>
+</html>

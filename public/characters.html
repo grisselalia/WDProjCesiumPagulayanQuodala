@@ -5,6 +5,7 @@
     <title>Characters</title>
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="characstylesheet.css">
 </head>
 <body>
     <div id="uppermargin">
@@ -24,3 +25,121 @@
              <a class="nav-item ask-source" href="#">Sources</a>
         </div>
     </div>
+
+    <div class="filter-section">
+        <label for="nation-filter">Nation:</label>
+        <select id="nation-filter">
+            <option value="all">All</option>
+            <option value="mondstadt">Mondstadt</option>
+            <option value="liyue">Liyue</option>
+            <option value="inazuma">Inazuma</option>
+            <option value="sumeru">Sumeru</option>
+            <option value="nodkrai">Nod-Krai</option>
+        </select>
+
+        <label for="weapon-filter">Weapon:</label>
+        <select id="weapon-filter">
+            <option value="all">All</option>
+            <option value="sword">Sword</option>
+            <option value="bow">Bow</option>
+            <option value="catalyst">Catalyst</option>
+            <option value="claymore">Claymore</option>
+            <option value="polearm">Polearm</option>
+        </select>
+
+        <label for="element-filter">Element:</label>
+        <select id="element-filter">
+            <option value="all">All</option>
+            <option value="anemo">Anemo</option>
+            <option value="geo">Geo</option>
+            <option value="electro">Electro</option>
+            <option value="dendro">Dendro</option>
+            <option value="pyro">Pyro</option>
+            <option value="hydro">Hydro</option>
+            <option value="cryo">Cryo</option>
+        </select>
+    </div>
+
+    <div class="characters-container">
+        <div class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro">
+            <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/amber/image.png?strip=all&quality=100" class="character-image">
+            <h2>Amber</h2>
+            <p><strong>4* • Mondstadt • Bow • Pyro</strong></p>
+            <p><strong>Birthday:</strong> August 10th</p>
+            <p><strong>Occupation:</strong> Outrider of the Knights of Favonius</p>
+            <p><strong>Personality:</strong> Optimistic, Cheerful, and Energetic</p>
+        </div>
+    </div>
+
+    <div class="characters-container">
+        <div class="character-card" id="kaeya"
+                data-nation="mondstadt" 
+                data-weapon="sword" 
+                data-element="cryo">
+            <img src="https://ar-cs.aza.gg/g/genshin/UI/UI_AvatarIcon_Kaeya.webp" class="character-image">
+            <h2>Kaeya Alberich</h2>
+            <p><strong>4* • Mondstadt • Sword • Cryo</strong></p>
+            <p><strong>Birthday:</strong> November 30th</p>
+            <p><strong>Occupation:</strong> Cavalry Captain of the Knights of Favonius</p>
+            <p><strong>Personality:</strong> Charming, Cunning, and Strategic</p>
+        </div>
+    </div>
+
+    <div class="characters-container">
+        <div class="character-card" id="lisa"
+                data-nation="mondstadt" 
+                data-weapon="catalyst" 
+                data-element="electro">
+            <img src="https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest?cb=20240711205456" class="character-image">
+            <h2>Lisa Minci</h2>
+            <p><strong>4* • Mondstadt • Catalyst • Electro</strong></p>
+            <p><strong>Birthday:</strong> June 9th</p>
+            <p><strong>Occupation:</strong> Head Librarian of the Knights of Favonius</p>
+            <p><strong>Personality:</strong> Flirtatious, Intelligent, and Carefree</p>
+        </div>
+    </div>
+
+    <footer>
+     <a href="https://genshin.hoyoverse.com/en/home">download the app! || </a>
+     <a href="">sources ||</a>
+     <a href="">genshin socmed links</a>
+    </footer>
+
+     <script>
+        
+        document.getElementById('nation-filter').addEventListener('change', filterCharacters);
+        document.getElementById('weapon-filter').addEventListener('change', filterCharacters);
+        document.getElementById('element-filter').addEventListener('change', filterCharacters);
+
+        function filterCharacters() {
+            const nationFilter = document.getElementById('nation-filter').value;
+            const weaponFilter = document.getElementById('weapon-filter').value;
+            const elementFilter = document.getElementById('element-filter').value;
+
+            const characters = document.querySelectorAll('.character-card');
+
+            characters.forEach(character => {
+                const characterNation = character.getAttribute('data-nation');
+                const characterWeapon = character.getAttribute('data-weapon');
+                const characterElement = character.getAttribute('data-element');
+
+                let show = true;
+
+                // checks if characs match filter(s)
+                if (nationFilter !== 'all' && characterNation !== nationFilter) show = false;
+                if (weaponFilter !== 'all' && characterWeapon !== weaponFilter) show = false;
+                if (elementFilter !== 'all' && characterElement !== elementFilter) show = false;
+
+                // shows/hides characs based on filter(s)... 
+                if (show) {
+                    character.style.display = 'block';
+                } else {
+                    character.style.display = 'none';
+                }
+            });
+        }
+    </script>
+

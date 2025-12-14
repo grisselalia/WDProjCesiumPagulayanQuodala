@@ -6,6 +6,7 @@
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="characstylesheet.css">
+    <script src="characscript.js" defer></script>
 </head>
 <body>
     <div id="uppermargin">
@@ -321,39 +322,4 @@
      <a href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki">sources ||</a>
      <a href="https://act.hoyoverse.com/ys/event/e20200410go_community/index.html">genshin socmed links</a>
     </footer>
-
-     <script>
-        
-        document.getElementById('nation-filter').addEventListener('change', filterCharacters);
-        document.getElementById('weapon-filter').addEventListener('change', filterCharacters);
-        document.getElementById('element-filter').addEventListener('change', filterCharacters);
-
-        function filterCharacters() {
-            const nationFilter = document.getElementById('nation-filter').value;
-            const weaponFilter = document.getElementById('weapon-filter').value;
-            const elementFilter = document.getElementById('element-filter').value;
-
-            const characters = document.querySelectorAll('.character-card');
-
-            characters.forEach(character => {
-                const characterNation = character.getAttribute('data-nation');
-                const characterWeapon = character.getAttribute('data-weapon');
-                const characterElement = character.getAttribute('data-element');
-
-                let show = true;
-
-                // checks if characs match filter(s)
-                if (nationFilter !== 'all' && characterNation !== nationFilter) show = false;
-                if (weaponFilter !== 'all' && characterWeapon !== weaponFilter) show = false;
-                if (elementFilter !== 'all' && characterElement !== elementFilter) show = false;
-
-                // shows/hides characs based on filter(s)... 
-                if (show) {
-                    character.style.display = 'block';
-                } else {
-                    character.style.display = 'none';
-                }
-            });
-        }
-    </script>
 

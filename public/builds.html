@@ -5,6 +5,7 @@
     <title>Builds</title>
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="buildsstylesheet.css">
 </head>
 <style>
     
@@ -28,8 +29,43 @@
         </div>
     </div>
 
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search Builds..." onkeyup="searchBuilds()">
+    </div>
+
+    <div class="characters-container">
+        <div class="character-card" id="amber"
+                result-item="amber">
+            <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/amber/image.png?strip=all&quality=100" class="character-image"> 
+            <h2>Amber</h2>
+            <p><strong>4* • Mondstadt • Bow • Pyro</strong></p>
+            <p>Pyro DPS, Burst Support, Utility</p>
+            <p>- good for beginners, not recommended for endgame content -</p>
+        </div>
+        
+    </div>
+
     <footer>
      <a href="https://genshin.hoyoverse.com/en/home">download the app! || </a>
      <a href="https://game8.co/games/Genshin-Impact/archives/530535">sources ||</a>
      <a href="https://act.hoyoverse.com/ys/event/e20200410go_community/index.html">genshin socmed links</a>
     </footer>
+
+    <script>
+        // js function for searching
+        function searchBuilds() {
+            let input = document.getElementById('searchBar').value.toLowerCase(); // convert input to lowercase
+            let items = document.getElementsByClassName('result-item'); // get all results
+            let searchResults = document.getElementById('searchResults');
+
+            // loop to check if it matches the search 
+            for (let i = 0; i < items.length; i++) {
+                let itemText = items[i].textContent.toLowerCase();
+                if (itemText.indexOf(input) > -1) {
+                    items[i].style.display = ''; // shows matching charac
+                } else {
+                    items[i].style.display = 'none'; // hides non-matching characs
+                }
+            }
+        }
+    </script>

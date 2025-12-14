@@ -70,6 +70,32 @@ h1
     font-weight: bold;
     transition: 0.3s;
     border: 1px solid rgba(255,255,255,0.3);
+    position:relative;
+}
+
+.nav-item::after 
+{
+    content: attr(data-tooltip); 
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--hawkesblue);
+    color: var(--denim);
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 60px;
+    opacity: 0;
+    pointer-events: none; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.nav-item:hover::after 
+{
+    opacity: 1;
+    visibility: visible; /* Show the tooltip when hovering */
 }
 
   .nav-item:hover

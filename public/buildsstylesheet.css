@@ -52,6 +52,7 @@
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-gap: 20px;
     margin-top: 20px;
     padding: 0 10px;
@@ -106,3 +107,24 @@
     font-weight: bold;
     color: var(--denim);
 }
+
+.characters-container a 
+{
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 5px 0;
+    color: var(--jordyblue);
+}
+
+.characters-container a:hover
+{
+    text-decoration: underline;
+    color: var(--denim);
+}
+
+
+
+
+
+
+

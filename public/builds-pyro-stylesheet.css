@@ -1,0 +1,54 @@
+:root 
+{
+    --denim: #316ABC;
+    --toolbox: #646FB7;
+    --hawkesblue: #D8DDFF;
+    --nightblue: #0A033F;
+    --bouqet: #A57C96;
+    --lily: #CCADB8;
+    --jordyblue: #8CB7FF;
+    /* Mavuika / Natlan color palette (Pyro, volcanic, tribal) */
+    --dark: #2A0E0A;          /* Charred volcanic brown */
+    --pyro: #C73A1B;         /* Intense Pyro red */
+    --ember: #F26A1B;        /* Burning orange */
+    --lava: #FFB347;         /* Molten gold */
+    --ash: #E6D3C1;          /* Pale ash */
+    --stone: #6B3E2E;        /* Earthy rock brown */
+    --glow: #FF6A00;         /* Flame glow */
+}
+
+.container
+{
+    margin: 20px;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.background
+{
+    background-image: url("https://i.pinimg.com/736x/69/b9/a8/69b9a8448ce9bf98f8f9324e709eb9fd.jpg");
+    background-size: cover;
+    border-radius: 10px;   
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-image 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    border: 4px solid var(--glow);
+    background-color: var(--ash);
+}
+
+

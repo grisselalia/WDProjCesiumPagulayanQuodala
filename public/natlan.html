@@ -1,157 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Website Layout</title>
-<style>
-  :root {
-    /* Mavuika / Natlan color palette (Pyro, volcanic, tribal) */
-    --dark: #2A0E0A;          /* Charred volcanic brown */
-    --pyro: #C73A1B;         /* Intense Pyro red */
-    --ember: #F26A1B;        /* Burning orange */
-    --lava: #FFB347;         /* Molten gold */
-    --ash: #E6D3C1;          /* Pale ash */
-    --stone: #6B3E2E;        /* Earthy rock brown */
-    --glow: #FF6A00;         /* Flame glow */
-  }
-
-  body {
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(135deg, var(--ash), var(--lava), var(--ember));
-    color: var(--dark);
-  }
-
-  header {
-    background: linear-gradient(90deg, var(--ember), var(--dark));
-    padding: 40px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--ash);
-    text-shadow: 0 0 12px var(--glow);
-  }
-
-  .nav {
-    background: linear-gradient(90deg, var(--pyro), var(--ember));
-    padding: 15px;
-    text-align: center;
-    color: var(--ash);
-    font-size: 1.2rem;
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .nav-item {
-    background: rgba(255,255,255,0.18);
-    padding: 10px 18px;
-    border-radius: 10px;
-    color: var(--ash);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .nav-item:hover {
-    background: rgba(255,255,255,0.35);
-    box-shadow: 0 0 10px var(--glow);
-  }
-
-  .container {
-    display: flex;
-    padding: 40px;
-    gap: 30px;
-    background: linear-gradient(135deg, var(--ember), var(--pyro));
-  }
-
-  .photo-box {
-    flex: 1;
-    background: linear-gradient(180deg, var(--ash), var(--stone));
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-    color: var(--dark);
-    font-size: 1.2rem;
-    border: 5px solid var(--glow);
-    box-shadow: 0 0 20px rgba(255,106,0,0.6);
-  }
-
-  .text-box {
-    flex: 2;
-    background-image: url("https://i.pinimg.com/736x/6e/ff/f8/6efff811160e619c3cf66537409984f5.jpg");
-    background-size: cover;
-    color: var(--ash);
-    border-radius: 25px;
-    padding: 40px;
-    font-size: 1.5rem;
-    border: 5px solid var(--lava);
-    box-shadow: 0 0 25px rgba(255,179,71,0.5);
-  }
-
-  footer {
-    background: linear-gradient(90deg, var(--pyro), var(--stone));
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-  }
-
-  footer div {
-    flex: 1;
-    text-align: center;
-    color: var(--dark);
-    background: var(--ash);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--ember);
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="./natlanstylesheet.css">
 </head>
-<body>
 
-<header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
-    <img src="../assets/icon.png" alt="logo" style="height:70px; width:auto;">
-    <span>The Traveler's Guide to Teyvat</span>
-  </div>
-</header>
+<body class="natlan">
 
-<div class="nav">
-  <div class="nav-container">
-    <a class="nav-item" href="../index.html">Home Page</a>
-    <a class="nav-item" href="./characters.html">Characters</a>
-    <a class="nav-item" href="./builds.html">Builds</a>
-    <a class="nav-item" href="#">Tips</a>
-    <a class="nav-item" href="#">Tutorials</a>
-    <a class="nav-item" href="./nations.html">Nations</a>
-    <a class="nav-item ask-source" href="#">Sources</a>
-  </div>
+<div id="uppermargin">
+    <img src="../assets/icon.png" style="margin-left:100px; width:150px;height:150px;">
+    <div>
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
 </div>
 
-<div class="container">
-  <div class="photo-box">
-    <img src="https://static.icy-veins.com/images/genshin-impact/exploration/natlan/natlan-basin.webp" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
-  </div>
+<div class="nav">
+    <div class="nav-container">
+        <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+        <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+        <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+        <a class="nav-item" href="#" data-tooltip="helpful tips and tricks">Tips</a>
+        <a class="nav-item" href="#" data-tooltip="step-by-step guides">Tutorials</a>
+        <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+        <a class="nav-item ask-source" href="#" data-tooltip="access source information">Sources</a>
+    </div>
+</div>
 
-  <div class="text-box">
-    <h1>Natlan</h1>
-    <p>The nation of oaths situated in the western regions of Teyvat.
-Guided by the flame, you pass through lengthy gorges and valleys to reach the land where the torches blaze, where all fires converge. Upon the blazing fields where Saurians roam, witness the end of the ancient war alongside the valiant warriors who resist the darkness.</p>
-  </div>
+<div class="nation-container">
+    <img 
+        src="https://knect365.imgix.net/uploads/Natlan-2-e8e50029980d72e6836fb1ad4192a967.jpg?auto=format&fit=max" 
+        alt="Natlan City"
+        class="nation-image"
+    >
+    <div class="nation-description">
+        <h2>Natlan</h2>
+        <p>
+            The fiery nation of Natlan, ruled by the Pyro Archon.
+            Passion and courage flow through its people, with
+            vibrant landscapes of volcanoes and deserts reflecting its spirit.
+        </p>
+    </div>
 </div>
 
 <footer>
-  <div>download the app !</div>
-  <div>sources</div>
-  <div>Genshin socmed links</div>
+    <a href="#">Download the App</a>
 </footer>
 
 </body>

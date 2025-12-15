@@ -1,153 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Website Layout</title>
-<style>
-  :root {
-    --dark: #0B1C2D; 
-    --hydro: #2F7FBF; 
-    --aqua: #6EC9E6;  
-    --mist: #EAF7FB; 
-    --silver: #B8C6D9; 
-    --navy: #1C3556;  
-    --glow: #8DE6FF;         
-  }
-
-  body {
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(135deg, var(--mist), var(--aqua), var(--hydro));
-    color: var(--dark);
-  }
-
-  header {
-    background: linear-gradient(90deg, var(--aqua), var(--navy));
-    padding: 40px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--mist);
-    text-shadow: 0 0 10px var(--glow);
-  }
-
-  .nav {
-    background: linear-gradient(90deg, var(--hydro), var(--aqua));
-    padding: 15px;
-    text-align: center;
-    color: var(--mist);
-    font-size: 1.2rem;
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .nav-item {
-    background: rgba(255,255,255,0.25);
-    padding: 10px 18px;
-    border-radius: 10px;
-    color: var(--mist);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .nav-item:hover {
-    background: rgba(255,255,255,0.45);
-  }
-
-  .container {
-    display: flex;
-    padding: 40px;
-    gap: 30px;
-    background: linear-gradient(135deg, var(--aqua), var(--hydro));
-  }
-
-  .photo-box {
-    flex: 1;
-    background: linear-gradient(180deg, var(--mist), var(--silver));
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-    color: var(--dark);
-    font-size: 1.2rem;
-    border: 5px solid var(--glow);
-  }
-
-  .text-box {
-    flex: 2;
-    background-image: url("https://i.pinimg.com/736x/3a/be/40/3abe409519394ba4b6a8d25a6e85438c.jpg");
-    background-size: cover;
-    color: var(--mist);
-    border-radius: 25px;
-    padding: 40px;
-    font-size: 1.5rem;
-    border: 5px solid var(--silver);
-  }
-
-  footer {
-    background: linear-gradient(90deg, var(--hydro), var(--silver));
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-  }
-
-  footer div {
-    flex: 1;
-    text-align: center;
-    color: var(--dark);
-    background: var(--mist);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--hydro);
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="./fontainestylesheet.css">
 </head>
-<body>
 
-<header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
-    <img src="../assets/icon.png" alt="logo" style="height:70px; width:auto;">
-    <span>The Traveler's Guide to Teyvat</span>
-  </div>
-</header>
+<body class="fontaine">
 
-<div class="nav">
-  <div class="nav-container">
-    <a class="nav-item" href="../index.html">Home Page</a>
-    <a class="nav-item" href="./characters.html">Characters</a>
-    <a class="nav-item" href="./builds.html">Builds</a>
-    <a class="nav-item" href="#">Tips</a>
-    <a class="nav-item" href="#">Tutorials</a>
-    <a class="nav-item" href="./nations.html">Nations</a>
-    <a class="nav-item ask-source" href="#">Sources</a>
-  </div>
+<div id="uppermargin">
+    <img src="../assets/icon.png" style="margin-left:100px; width:150px;height:150px;">
+    <div>
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
 </div>
 
-<div class="container">
-  <div class="photo-box">
-    <img src="https://assetsio.gnwcdn.com/How-to-get-to-Fontaine-in-Genshin-Impact-cover.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
-  </div>
+<div class="nav">
+    <div class="nav-container">
+        <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+        <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+        <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+        <a class="nav-item" href="#" data-tooltip="helpful tips and tricks">Tips</a>
+        <a class="nav-item" href="#" data-tooltip="step-by-step guides">Tutorials</a>
+        <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+        <a class="nav-item ask-source" href="#" data-tooltip="access source information">Sources</a>
+    </div>
+</div>
 
-  <div class="text-box">
-    <h1>Fontaine</h1>
-    <p>A terrestrial sea in the center of Teyvat.
-Following the direction of pure currents, crossing wilderness, the depths of the forests and vastness of the sea of sand, arriving at the origin of all the waters of the continent. At the top of the waterfall, in the depths of the capital atop the terrestrial sea... a story that has never been heard, a legend that has been forgotten, like a lost kingdom sunken beneath the waves, yearning for a bard to sing its drowned songs.</p>
-  </div>
+<div class="nation-container">
+    <img 
+        src="https://www.oficinadanet.com.br/media/post/48465/330/capa-genshin-impact-novo-personagem-de-fontaine-e-vazado.jpg" 
+        alt="Fontaine City"
+        class="nation-image"
+    >
+    <div class="nation-description">
+        <h2>Fontaine</h2>
+        <p>
+            A terrestrial sea in the center of Teyvat.
+Following the direction of pure currents, crossing wilderness, the depths of the forests and vastness of the sea of sand, arriving at the origin of all the waters of the continent. At the top of the waterfall, in the depths of the capital atop the terrestrial sea... a story that has never been heard, a legend that has been forgotten, like a lost kingdom sunken beneath the waves, yearning for a bard to sing its drowned songs.
+        </p>
+    </div>
 </div>
 
 <footer>
-  <div>download the app !</div>
-  <div>sources</div>
-  <div>Genshin socmed links</div>
+    <a href="#">Download the App</a>
 </footer>
 
 </body>

@@ -160,8 +160,7 @@ footer a
     align-items: center;
 }
 
-/* After footer - change mondstadt to liyue */
-body.liyue .nation-image {
+body.inazuma .nation-image {
     width: 420px;
     height: 300px;
     object-fit: cover;
@@ -173,13 +172,13 @@ body.liyue .nation-image {
         0 20px 45px rgba(0, 0, 0, 0.7);
 }
 
-body.liyue .nation-description {
+body.inazuma .nation-description {
     width: 720px;
     height: 350px;
     padding: 45px;
     border-radius: 25px;
 
-    background-image: url("https://genshindb.org/wp-content/uploads/2021/01/Zhongli-Namecard-Planet-Befall.png");
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.6Dheb9v_XTRnGSPEn5vmmAHaDh?pid=Api&P=0&h=180"); 
     background-size: cover;
     background-position: center;
 
@@ -193,18 +192,16 @@ body.liyue .nation-description {
         0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-body.liyue .nation-description h2 {
+body.inazuma .nation-description h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: var(--denim);
     text-shadow: 0 0 10px var(--hawkesblue);
 }
-
 .nation-container {
     display: flex;
-    justify-content: center;
-    align-items: center;     
-    gap: 45px;                
+    justify-content: center; 
+    align-items: center;      
+    gap: 45px;               
     padding: 80px;
 }
-

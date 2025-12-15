@@ -104,24 +104,17 @@ h1
     box-shadow: 0 0 10px var(--hawkesblue);
 }
 
-.text-box 
+.text-box, .nation-description
 {
     background: radial-gradient(var(--lily), var(--hawkesblue), var(--jordyblue));
     color: var(--nightblue);
-    margin-top: 15px;
-    margin-right: 15px;
     border-radius: 25px;
     padding: 40px;
     font-size: 1.5rem;
     border: 2px solid var(--hawkesblue);
     width: 720px;
     height: 350px;
-    float: right;
 }
-
-.text-box h2 { margin-top: -15px; }
-.text-box h3 { margin-top: -20px; }
-.text-box p { margin-top: -20px; }
 
 .video-container
 {
@@ -160,51 +153,45 @@ footer a
     align-items: center;
 }
 
-/* After footer - change mondstadt to liyue */
-body.liyue .nation-image {
+.nation-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    gap: 45px;               
+    padding: 80px;
+}
+
+body.sumeru .nation-image {
     width: 420px;
     height: 300px;
     object-fit: cover;
     border-radius: 25px;
-
     border: 4px solid var(--jordyblue);
     box-shadow:
         0 0 25px rgba(140, 183, 255, 0.7),
         0 20px 45px rgba(0, 0, 0, 0.7);
 }
 
-body.liyue .nation-description {
+body.sumeru .nation-description {
     width: 720px;
     height: 350px;
     padding: 45px;
     border-radius: 25px;
-
-    background-image: url("https://genshindb.org/wp-content/uploads/2021/01/Zhongli-Namecard-Planet-Befall.png");
+    background-image: url("https://genshindb.org/wp-content/uploads/2022/11/Nahida-Namecard-Crescent.webp"); 
     background-size: cover;
     background-position: center;
-
     color: var(--nightblue);
     font-size: 1.5rem;
     line-height: 1.6;
-
     border: 3px solid var(--hawkesblue);
     box-shadow:
         0 0 20px var(--hawkesblue),
         0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-body.liyue .nation-description h2 {
+body.sumeru .nation-description h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: var(--denim);
     text-shadow: 0 0 10px var(--hawkesblue);
 }
-
-.nation-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    gap: 45px;                
-    padding: 80px;
-}
-

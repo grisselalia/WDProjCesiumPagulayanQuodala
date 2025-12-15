@@ -1,161 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Inazuma !</title>
-<style>
-  
-  :root {
-    --deep-purple: #2B164A;
-    --electro-purple: #6A35FF;
-    --lavender: #C8A8FF;
-    --soft-lilac: #EDE2FF;
-    --storm-gray: #A29CBC;
-    --glow-violet: #B071FF;
-    --royal-gold: #E2C57A;
-  }
-
-  body {
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(135deg, var(--soft-lilac), var(--lavender), var(--electro-purple));
-    color: var(--deep-purple);
-  }
-
-  header {
-    background: linear-gradient(90deg, var(--electro-purple), var(--deep-purple));
-    padding: 40px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--soft-lilac);
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px var(--lavender);
-  }
-
-  .nav {
-    background: linear-gradient(90deg, var(--glow-violet), var(--electro-purple));
-    padding: 15px;
-    text-align: center;
-    color: var(--soft-lilac);
-    font-size: 1.2rem;
-    box-shadow: 0 0 15px var(--electro-purple);
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .nav-item {
-    background: rgba(255,255,255,0.15);
-    padding: 10px 18px;
-    border-radius: 10px;
-    color: var(--soft-lilac);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.3);
-  }
-
-  .nav-item:hover {
-    background: rgba(255,255,255,0.3);
-    box-shadow: 0 0 10px var(--lavender);
-  }
-
-  .container {
-    display: flex;
-    padding: 40px;
-    gap: 30px;
-    background: linear-gradient(135deg, var(--deep-purple), var(--electro-purple));
-  }
-
-  .photo-box {
-    flex: 1;
-    background: linear-gradient(180deg, var(--soft-lilac), var(--storm-gray));
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-    color: var(--deep-purple);
-    font-size: 1.2rem;
-    border: 5px solid var(--electro-purple);
-    box-shadow: 0 0 15px var(--glow-violet);
-  }
-
-  .text-box {
-    flex: 2;
-    background-image: url("https://preview.redd.it/nz1iwcz266d71.png?auto=webp&s=59dd93fdf719c867e56249dd6453e563919c30da");
-    background-size: cover;
-    color: var(--soft-lilac);
-    border-radius: 25px;
-    padding: 40px;
-    font-size: 1.5rem;
-    border: 5px solid var(--storm-gray);
-    box-shadow: 0 0 20px var(--electro-purple);
-  }
-
-  footer {
-    background: linear-gradient(90deg, var(--electro-purple), var(--storm-gray));
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    color: var(--soft-lilac);
-  }
-
-  footer div {
-    flex: 1;
-    text-align: center;
-    background: var(--soft-lilac);
-    color: var(--deep-purple);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--glow-violet);
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="./inazumastylesheet.css">
 </head>
-<body>
 
-<header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
-    <img src="../assets/icon.png" alt="logo" style="height:70px; width:auto; filter: drop-shadow(0 0 5px var(--lavender));">
-    <span>The Traveler's Guide to Teyvat</span>
-  </div>
-</header>
+<body class="inazuma">
 
-<div class="nav">
-  <div class="nav-container">
-    <a class="nav-item" href="../index.html">Home Page</a>
-    <a class="nav-item" href="./characters.html">Characters</a>
-    <a class="nav-item" href="./builds.html">Builds</a>
-    <a class="nav-item" href="#">Tips</a>
-    <a class="nav-item" href="#">Tutorials</a>
-    <a class="nav-item" href="nations.html">Nations</a>
-    <a class="nav-item ask-source" href="#">Sources</a>
-  </div>
+<div id="uppermargin">
+    <img src="../assets/icon.png" style="margin-left:100px; width:150px;height:150px;">
+    <div>
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
 </div>
 
-<div class="container">
-  <div class="photo-box">
-    <img src="https://d1lss44hh2trtw.cloudfront.net/assets/article/2021/07/09/genshin-impact-version-20-coming-late-july-with-new-inazuma-area-cross-progression_feature.jpg" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px; box-shadow:0 0 15px var(--electro-purple);">
-  </div>
-  <div class="text-box">
-    <h1>Inazuma</h1>
-    <p>An Isolated Archipelago Far East of Teyvat
-Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.</p>
-  </div>
+<div class="nav">
+    <div class="nav-container">
+        <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+        <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+        <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+        <a class="nav-item" href="#" data-tooltip="helpful tips and tricks">Tips</a>
+        <a class="nav-item" href="#" data-tooltip="step-by-step guides">Tutorials</a>
+        <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+        <a class="nav-item ask-source" href="#" data-tooltip="access source information">Sources</a>
+    </div>
+</div>
+
+<div class="nation-container">
+    <img 
+        src="https://d1lss44hh2trtw.cloudfront.net/assets/article/2021/07/09/genshin-impact-version-20-coming-late-july-with-new-inazuma-area-cross-progression_feature.jpg" 
+        alt="Inazuma City"
+        class="nation-image"
+    >
+    <div class="nation-description">
+        <h2>Inazuma</h2>
+        <p>
+            An Isolated Archipelago Far East of Teyvat overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.
+        </p>
+    </div>
 </div>
 
 <footer>
-  <div>download the app!</div>
-  <div>sources</div>
-  <div>Genshin socmed links</div>
+    <a href="#">Download the App</a>
 </footer>
 
 </body>
 </html>
+

@@ -1,151 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mondstadt !</title>
-<style>
-  :root {
-    --dark: #02000C;
-    --teal: #318C80;
-    --cream: #EAE6C7;
-    --light: #F3F2FF;
-    --gray: #D6D5E0;
-    --brown: #A58B7C;
-    --green: #5BA577;
-  }
-
-  body {
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(135deg, var(--cream), var(--green), var(--teal));
-    color: var(--dark);
-  }
-
-  header {
-    background: linear-gradient(90deg, var(--green), var(--dark));
-    padding: 40px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--light);
-  }
-
-  .nav {
-    background: linear-gradient(90deg, var(--teal), var(--green));
-    padding: 15px;
-    text-align: center;
-    color: var(--light);
-    font-size: 1.2rem;
-  }
-
-  .container {
-    display: flex;
-    padding: 40px;
-    gap: 30px;
-    background: linear-gradient(135deg, var(--teal), var(--green));
-  }
-
-  .photo-box {
-    flex: 1;
-    background: linear-gradient(180deg, var(--light), var(--gray));
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
-    color: var(--dark);
-    font-size: 1.2rem;
-    border: 5px solid var(--green);
-  }
-
-  .text-box {
-    flex: 2;
-    background-image: url("https://genshindb.org/wp-content/uploads/2021/01/Venti-Namecard-Azure-Sky.png");
-    background-size: cover;
-    color: var(--cream);
-    border-radius: 25px;
-    padding: 40px;
-    font-size: 1.5rem;
-    border: 5px solid var(--gray);
-  }
-
-  footer {
-    background: linear-gradient(90deg, var(--green), var(--gray));
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-  }
-
-  footer div {
-    flex: 1;
-    text-align: center;
-    color: var(--dark);
-    background: var(--light);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--green);
-  } 
-
-  .nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.nav-item {
-    background: rgba(255,255,255,0.2);
-    padding: 10px 18px;
-    border-radius: 10px;
-    color: var(--light);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-
-.nav-item:hover {
-    background: rgba(255,255,255,0.35);
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type = "image/png" href = "./assets/icon.png">
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="./mondstadtstylesheet.css">
 </head>
-<body>
 
-<header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
-    <img src="../assets/icon.png" alt="logo" style="height:70px; width:auto;">
-    <span>The Traveler's Guide to Teyvat</span>
-  </div>
-</header>
-<div class="nav">
-<div class="nav-container">
-<a class="nav-item" href="../index.html">Home Page</a>
-<a class="nav-item" href="./characters.html">Characters</a>
-<a class="nav-item" href="./builds.html">Builds</a>
-<a class="nav-item" href="#">Tips</a>
-<a class="nav-item" href="#">Tutorials</a>
-<a class="nav-item" href="./nations.html">Nations</a>
-<a class="nav-item ask-source" href="#">Sources</a>
+<body class="mondstadt">
+
+<div id="uppermargin">
+    <img src="../assets/icon.png" style="margin-left:100px; width:150px;height:150px;">
+    <div>
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
 </div>
-</div>
-<div class="container">
-  <div class="photo-box">
-    <img src="https://upload-os-bbs.hoyolab.com/upload/2020/07/14/1072831/0386851a028480eb95da974ccd2227ea_213412409097284740.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="nation image" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
-  </div>
-  <div class="text-box">
-    <h1>Mondstadt</h1>
-    <p>A city of freedom that lies in the northeast of Teyvat.
-From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.</p>
-  </div>
+
+    <div class="nav">
+        <div class="nav-container">
+            <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+            <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+            <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+            <a class="nav-item" href="#" data-tooltip="helpful tips and tricks">Tips</a>
+            <a class="nav-item" href="#" data-tooltip="step-by-step guides">Tutorials</a>
+            <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+            <a class="nav-item ask-source" href="#" data-tooltip="access source information">Sources</a>
+        </div>
+    </div>
+
+<div class="nation-container">
+
+    <img 
+        src="https://staticg.sportskeeda.com/editor/2023/01/40c81-16732644246874-1920.jpg" 
+        alt="Mondstadt City"
+        class="nation-image"
+    >
+
+    <div class="nation-description">
+        <h2>Mondstadt</h2>
+        <p>
+            A city of freedom that lies in the northeast of Teyvat.
+            From amongst mountains and wide-open plains, carefree
+            breezes carry the scent of dandelions — a gift from the
+            Anemo God, Barbatos — across Cider Lake to Mondstadt,
+            which sits on an island in the middle of the lake.
+        </p>
+    </div>
+
 </div>
 
 <footer>
-  <div>download the app !</div>
-  <div>sources</div>
-  <div>Genshin socmed links</div>
+    <a href="#">Download the App</a>
 </footer>
 
 </body>

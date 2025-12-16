@@ -9,30 +9,6 @@
     --jordyblue: #8CB7FF;
 }
 
-.container
-{
-    margin: 20px;
-    padding: 0 10px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.background
-{
-    background-image: url("https://i.pinimg.com/736x/69/b9/a8/69b9a8448ce9bf98f8f9324e709eb9fd.jpg");
-    background-size: cover;
-    border-radius: 10px;   
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
 #uppermargin
 {
     width: 100%;
@@ -137,4 +113,99 @@ footer a
 {
     color: var(--jordyblue);
     align-items: center;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px; 
+}
+
+.background {
+    background-image: url("../assets/indexbg.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-box {
+    float: none !important;
+    position: relative !important;
+
+    margin: 50px auto !important;
+
+    width: auto !important;
+    max-width: 900px;
+    height: auto !important;
+
+    padding: 40px 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.faq-item {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.text-box * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    border: 3px solid var(--jordyblue);
+
+    padding: 40px 45px;
+
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+
+    margin: 50px auto;
+
+    box-shadow:
+        0 0 20px rgba(140, 183, 255, 0.6),
+        0 15px 35px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text-box .faq-item {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    border-left: 6px solid var(--denim);
+
+    padding: 20px;
+    margin: 20px auto;
+
+    width: 100%;
+    max-width: 800px;
 }

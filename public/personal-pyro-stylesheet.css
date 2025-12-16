@@ -51,6 +51,15 @@
     background-color: var(--ash);
 }
 
+.character-wish-image
+{
+    width: auto; 
+    height: auto;
+    display: wrap;
+    right: 0;
+    margin-right: 3rem;
+}
+
 .character-image:hover
 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

@@ -217,4 +217,12 @@ body.mondstadt .nation-description h2 {
     color: var(--denim);
     text-shadow: 0 0 10px var(--hawkesblue);
 }
+.nation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    gap: 45px;                
+    padding: 80px;
+}
+
 

@@ -31,13 +31,12 @@
     </div>
 
     <div class="search-container">
-        <input type="text" id="searchBar" placeholder="Search Builds..." onkeyup="searchBuilds()">
-
+        <input type="text" name="search" id="searchBar" placeholder="Search Builds..." onkeyup="searchBuilds()">
     </div>
 
     <div class="characters-container">
         <div class="character-card" id="amber"
-                items="amber">
+                result-item="amber">
             <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/amber/image.png?strip=all&quality=100" class="character-image"> 
             <h2>Amber</h2>
             <p><strong>4* • Mondstadt • Bow • Pyro</strong></p>
@@ -46,7 +45,7 @@
         </div>
 
         <div class="character-card" id="kaeya"
-                items="kaeya">
+                result-item="kaeya">
             <img src="https://ar-cs.aza.gg/g/genshin/UI/UI_AvatarIcon_Kaeya.webp" class="character-image"> 
             <h2>Kaeya</h2>
             <p><strong>4* • Mondstadt • Sword • Cryo</strong></p>

@@ -36,3 +36,19 @@ This website aims to help Genshin Impact players navigate their way to success i
 ![alt text](assets/image-7.png)
 ![alt text](assets/image-8.png)
 
+#  Cs - Pagulayan, Quodala Q3 Project Proposal Update Plan
+## The Traveler’s Guide to Teyvat
+
+### HTML Form
+**Log In** - There will be an option for users on the top right to be able to log into our website. This will allow them access to comment on our Tips page so they can ask for help and bond with players globally.
+
+### 3 New Webpages
+1. **Log In** - was stated and described above 
+2. **Meet The VAs** - This will be a page for players to view the people behind beloved characters! It's also a way to promote the voice actors. There will also be updates when fan-meets-n-greets are happening. This will also include the VAs social media pages if applicable.
+3. **TCG** - TCG is a gamemode played with NPCs in Genshin Impact. This page will recreate the experience. It will be choice based, where every attack or move to defend can result in consequences. Users must log in/sign up in order to play.
+
+### extra 
+**Updated Tips** - We will add a comment section where people can post questions and other users can reply. Users need to log in/sign up in order to post and reply, but they can view existing questions and replies as a guest. 
+
+### Wireframes
+

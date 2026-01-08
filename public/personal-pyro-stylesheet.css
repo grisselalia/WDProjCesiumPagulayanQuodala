@@ -42,13 +42,22 @@
 
 .character-image 
 {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     border-radius: 8px;
     margin-bottom: 15px;
     margin-right: 20px;
-    border: 4px solid #6B3E2E;
+    border: 2px solid #6B3E2E;
     background-color: var(--ash);
+}
+
+.character-wish-image
+{
+    width: auto; 
+    height: auto;
+    display: wrap;
+    right: 0;
+    margin-right: 3rem;
 }
 
 .character-image:hover
@@ -56,13 +65,25 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container h1
+.container h2
 {
-    
-    position:absolute;
     padding: 10px;
     color:#6c2515;
+    margin-top: -10px;
+    margin-bottom: 10px;
     text-align: center;
+    margin-left: -15px;
 }
+
+.container h1
+{
+    display: wrap;
+    color:#2A0E0A;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 3rem;
+}
+
+
 
 

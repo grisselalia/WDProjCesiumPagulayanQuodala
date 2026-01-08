@@ -4,10 +4,28 @@
     <meta viewport content="width=device-width, initial-scale=1.0">
     <title>Sources</title>
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="characstylesheet.css">
-    <script src="characscript.js" defer></script>
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
+<style>
+    .source-container
+    {
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .source-container p 
+    {
+        color:rgb(119, 10, 10);
+        text-align: left;
+        text-decoration:bold;
+        margin: 20px;
+    }
+</style>
 <body>
     <div id="uppermargin">
         <img src="../assets/icon.png" left-align style="margin-left:100px; width:150px;height:150px;">
@@ -18,11 +36,24 @@
     <div class="nav">
         <div class="nav-container">
             <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
-            <a class="nav-item" href="characters.html" data-tooltip="explore character profiles">Characters</a>
-            <a class="nav-item" href="builds.html" data-tooltip="browse different builds">Builds</a>
-            <a class="nav-item" href="tips.html" data-tooltip="helpful tips and tricks">Tips</a>
+            <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+            <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+            <a class="nav-item" href="./tips.html" data-tooltip="helpful tips and tricks">Tips</a>
             <a class="nav-item" href="#" data-tooltip="step-by-step guides">Tutorials</a>
-            <a class="nav-item" href="nations.html" data-tooltip="learn about the nations">Nations</a>
-            <a class="nav-item ask-source" href="#" data-tooltip="access source information">Sources</a>
+            <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+            <a class="nav-item ask-source" href="./sources.html" data-tooltip="access source information">Sources</a>
         </div>
     </div>
+
+    <div class="source-container">
+        <p>Team, G. I. W. (2025, December 16). Genshin Impact Walkthrough & Guides Wiki｜Game8. Game8｜the Top Gaming and App Walkthroughs Straight From Japan! https://game8.co/games/Genshin-Impact</p>
+        <p>Genshin Impact Wiki | Fandom. (n.d.). https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki
+        </p>
+        <p>furenarchives. (n.d.). Pinterest. https://ph.pinterest.com/furenarchives/</p>
+    </div>
+
+    <footer>
+     <a href="https://genshin.hoyoverse.com/en/home">download the app! || </a>
+     <a href="sources.html">sources ||</a>
+     <a href="https://act.hoyoverse.com/ys/event/e20200410go_community/index.html">genshin socmed links</a>
+    </footer>

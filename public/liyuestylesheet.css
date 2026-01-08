@@ -160,7 +160,6 @@ footer a
     align-items: center;
 }
 
-/* After footer - change mondstadt to liyue */
 body.liyue .nation-image {
     width: 420px;
     height: 300px;

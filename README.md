@@ -52,3 +52,14 @@ This website aims to help Genshin Impact players navigate their way to success i
 
 ### Wireframes
 
+**updated part of tips**
+![alt text](assets/8.png)
+
+**meet the vas**
+![alt text](assets/9.png)
+
+**tcg**
+![alt text](assets/10.png)
+
+actual tcg game layout
+![alt text](https://upload.wikimedia.org/wikipedia/en/9/96/Genius_Invokation_TCG_gameplay.jpg)

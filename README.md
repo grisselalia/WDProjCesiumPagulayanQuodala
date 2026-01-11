@@ -52,6 +52,9 @@ This website aims to help Genshin Impact players navigate their way to success i
 
 ### Wireframes
 
+**sign-up / sign-in**
+![alt text](assets/11.png)
+
 **updated part of tips**
 ![alt text](assets/8.png)
 

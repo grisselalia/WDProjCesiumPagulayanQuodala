@@ -23,6 +23,7 @@ body
     top: 0;
     bottom: 0;
     background-color: var(--nightblue);
+    position: relative;
 }
 
 h1 
@@ -171,7 +172,26 @@ footer a
     align-items: center;
 }
 
+.auth-links {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 16px;
+}
 
+.auth-links a {
+    text-decoration: none;
+    color: var(--hawkesblue);
+    font-weight: bold;
+    margin: 0 5px;
+}
 
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.auth-links span {
+    color: var(--hawkesblue);
+}
 
 

@@ -35,10 +35,14 @@
 
     <div class="comments-area">
 
-        <div class="add-comment-bar">
-            <div class="profile-circle"></div>
+        <div class="add-comment-bar" id="commentBar">
+            <div class="profile-circle" id="userCircle"></div>
             <input type="text" id="commentInput" placeholder="Add a comment..." />
             <button id="postComment">➤</button>
+        </div>
+
+        <div id="loginMessage" style="display:none; color:white; margin-bottom:15px;">
+            You must be signed in to comment.
         </div>
 
         <div id="commentsContainer"></div>

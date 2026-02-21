@@ -1,0 +1,127 @@
+:root {
+    --denim: #316ABC;
+    --toolbox: #646FB7;
+    --hawkesblue: #D8DDFF;
+    --nightblue: #0A033F;
+    --bouqet: #A57C96;
+    --lily: #CCADB8;
+    --jordyblue: #8CB7FF;
+  }
+  
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    color: var(--denim);
+}
+
+h3 {
+    color: var(--lily);
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+p {
+    color: var(--nightblue);
+    text-align: justify;
+    margin-right: 30px;
+    font-size: 17px;
+}
+
+li {
+    color: var(--nightblue);
+    text-align: justify;
+    margin-right: 30px;
+    font-size: 17px;
+}
+
+.tutorial-content {
+    padding: 50px 10%;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--nightblue);
+}
+
+.tutorial-section {
+    margin-bottom: 35px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--nightblue);
+}
+
+.play-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.play-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2d3e8b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: var(--lily);
+    transform: translateY(-8px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    padding: 20px;
+    background-color: var(--hawkesblue);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--nightblue);
+    margin: 35px;
+}
+
+.heading a {
+    text-decoration: none;
+    color: var(--toolbox);
+}
+
+.heading h3 {
+    text-decoration: none;
+    color: var(--toolbox);
+}
+
+/* everyt under this is PROBABLY for the actual game */ 
+
+#availableCharacters .card {
+  background-color: var(--hawkesblue);
+  border: 1px solid var(--nightblue);
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--nightblue);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+  text-align: center;
+  padding: 10px;
+}
+
+#availableCharacters .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  border-color: var(--denim);
+}
+
+#availableCharacters .card[style*="3px solid gold"] {
+  background-color: var(--jordyblue);
+  color: white;
+  border-color: var(--bouqet) !important;
+}

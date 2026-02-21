@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta viewport content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type = "image/png" href = "../assets/icon.png">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="tcg.css">
+</head>
+
+<body>
+    <div id="uppermargin">
+        <div class="auth-links" id="authArea">
+        <a href="log-in.html">sign in</a>
+        <span>|</span>
+        <a href="sign-up.html">sign up</a>
+        </div>
+        <img src="../assets/icon.png" left-align style="margin-left:100px; width:150px;height:150px;">
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
+
+    <div class="nav">
+        <div class="nav-container">
+            <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+            <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+            <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+            <a class="nav-item" href="./tips.html" data-tooltip="helpful tips and tricks">Tips</a>
+            <a class="nav-item" href="./tutorial.html" data-tooltip="step-by-step guides">Tutorials</a>
+            <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+            <a class="nav-item ask-source" href="./sources.html" data-tooltip="access source information">Sources</a>
+        </div>
+    </div>
+
+    <div class="tutorial-content">
+
+    <h2>Genius Invokation TCG Tutorial .✦ ݁˖</h2>
+    <p class="intro-text">
+        TCG is a strategic card-based gamemode in Genshin Impact.
+        Players battle using character cards, action cards, and elemental dice.
+    </p>
+
+    <section class="tutorial-section">
+        <h3>Objective</h3>
+        <p>
+            Defeat all three of your opponent’s Character Cards.
+            Each player selects 3 characters and builds a deck to duel.
+        </p>
+    </section>
+
+    <section class="tutorial-section">
+        <h3>Elemental Dice</h3>
+        <ul>
+            <li>8 dice are rolled at the start of each round.</li>
+            <li>Skills consume specific elemental dice.</li>
+            <li>Manage your dice wisely to avoid wasting turns.</li>
+        </ul>
+    </section>
+
+    <section class="tutorial-section">
+        <h3>Elemental Reactions</h3>
+        <ul>
+            <li>Pyro + Hydro → Vaporize (increased damage)</li>
+            <li>Pyro + Cryo → Melt (increased damage)</li>
+            <li>Electro + Hydro → Electro-Charged</li>
+            <li>Geo → Creates shields</li>
+        </ul>
+    </section>
+
+    <section class="tutorial-section">
+        <h3>Energy & Elemental Burst</h3>
+        <p>
+            Characters gain energy when attacking. Once their energy is full,
+            they can unleash a powerful Elemental Burst ability.
+        </p>
+    </section>
+
+    <!-- TEXT IS COPY PASTED (for the next 2 sects) PLS CHANGE LATER HEHE -->
+
+    <section class="tutorial-section">
+        <h3>TCG Battle Flow</h3>
+        <ol>
+            <li>Preperation - Before the game begins, you and your opponent will draw 5 random cards from your Draw Pile. You can swap out any of the cards one time before your starting Hand is finalized. Use this feature to replace unwanted cards. </li> </p>
+            <li>Roll Phase - This is the first phase of a round. Roll 8 Elemental Dice to get the "energy"you need to play your cards. You can choose whichever dice you want to reroll, but you can only do this once every roll phase. Use this feature to try and get rid of the dice you don't need.</li> </p>
+            <li>Action Phase - This is when the game actually starts! Use the Elemental Dice you rolled that round to play your cards right. There are a handful of possible moves to make during this phase, and we've listed them down for you in a section below.</li> </p>
+            <li>End Phase - This is the phase before a new round starts. In this phase, passive card effects are triggered and each player will get two new random cards from their Draw Pile. After this phase, we return to the Roll Phase and start a new round!</li>
+        </ol>
+    </section>
+
+    <section class="tutorial-section">
+        <h3>Moves during Action Phase</h3>
+        <ol>
+            <li>Character Skill - Use your Character Cards' skills by spending the correct number and type of Elemental Dice you possess that round. Remember that only the active character can use Character Skills. These types of moves usually deal the most damage to the enemy's cards.</li> </p>
+            <li>Switch Characters - Spend one Dice of any element to replace your active character. This usually ends your turn unless you played and Action Card that lets you continue the turn even after switching characters.</li> </p>
+            <li>Use Other Cards - Other than Character Cards, you can use any of the Action Cards in your hand as long as you have the right Elemental Dice. There are a lot of Action Cards and endless combos that can give you the upper hand in battle.</li> </p>
+            <li>Elemental Tuning - Sacrifice a card from your Hand to change the element of one dice. Use this with cards you don't really need, so you can use more Character Skills during the round.</li> </p>
+            <li>End the Round - If you're out of Elemental Dice or moves, end the round to go back to the Roll Phase!</li>
+        </ol>
+    </section>
+
+    <section class="tutorial-section">
+        <h3>Strategy Tips</h3>
+        <ul>
+            <li>Switch characters strategically.</li>
+            <li>Trigger elemental reactions for bonus damage.</li>
+            <li>Save your Burst for critical moments.</li>
+        </ul>
+    </section>
+
+    <div class="play-button-container">
+        <button class="play-button" onclick="enterGame()">
+            Start Playing Genius Invokation
+        </button>
+    </div>
+
+</div>
+
+<script>
+function enterGame() {
+    const user = localStorage.getItem("loggedInUser");
+
+    if (!user) {
+        alert("You must sign in before playing.");
+        window.location.href = "log-in.html";
+    } else {
+        window.location.href = "tcg.html";
+    }
+}
+</script>
+
+</body>

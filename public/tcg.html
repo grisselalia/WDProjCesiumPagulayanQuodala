@@ -2,13 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta viewport content="width=device-width, initial-scale=1.0">
-    <title>Builds || Amber </title>
+    <title>The Traveler’s Guide to Teyvat</title>
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="personal-pyro-stylesheet.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="tcg.css">
 </head>
-<style>
-</style>
 <body>
     <div id="uppermargin">
         <div class="auth-links" id="authArea">
@@ -33,16 +31,27 @@
         </div>
     </div>
 
-    <div class="container">
-        <p> -- this will include photos and references of the domain to get her artifacts, and how to acquire her level-up materials. --</p>    
-    
-        <div class="background">
-            <img src ="https://i2.wp.com/images.genshin-builds.com/genshin/characters/amber/image.png?strip=all&quality=100" class="character-image"></img>
-            <h2>Amber</h2>
-        </div>
-        <h1>Ascension Materials</h1>
-        <h3>-- </h3>
+    <div class="heading">
+    <h3 style="text-align:center;">read before you play → 
+        <a href="tcg-tut.html"> TCG tutorial</a>
+    </h3>
     </div>
 
-    <script src="auth.js"></script>
+    <div id="teamSelection">
+    <h2>Select Your 3 Characters</h2>
+    <div id="availableCharacters" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
+    <button id="startGameBtn">Start Game</button>
+    </div>
 
+</div>
+
+    <div class="tcg-container" style="display: none;">
+        <!-- insert code... kaya ko'to -->
+    </div>
+
+
+<script src="tcg-game.js"></script>
+<script src="tcg-ui.js"></script>
+<script src="tcg.js"></script>
+<script src="auth.js"></script>
+</body>

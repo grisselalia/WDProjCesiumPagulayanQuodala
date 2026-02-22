@@ -100,7 +100,8 @@ li {
   background-color: var(--hawkesblue);
   border: 1px solid var(--nightblue);
   border-radius: 10px;
-  width: 150px;
+  margin: 5px;
+  width: 175px;
   height: 200px;
   display: flex;
   flex-direction: column;

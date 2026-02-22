@@ -4,7 +4,8 @@
     <meta viewport content="width=device-width, initial-scale=1.0">
     <title>The Traveler’s Guide to Teyvat</title>
     <link rel="icon" type = "image/png" href = "../assets/icon.png">
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./meetthevasstylesheet.css">
+
 </head>
 <body>
     <div id="uppermargin">
@@ -29,6 +30,53 @@
             <a class="nav-item ask-source" href="./sources.html" data-tooltip="access source information">Sources</a>
         </div>
     </div>
+    <div class="filter-section">
+        <label for="nation-filter">Nation:</label>
+        <select id="nation-filter">
+            <option value="all">All</option>
+            <option value="mondstadt">Mondstadt</option>
+            <option value="liyue">Liyue</option>
+            <option value="inazuma">Inazuma</option>
+            <option value="sumeru">Sumeru</option>
+            <option value="nodkrai">Nod-Krai</option>
+        </select>
+        
+        <label for="weapon-filter">Weapon:</label>
+        <select id="weapon-filter">
+            <option value="all">All</option>
+            <option value="sword">Sword</option>
+            <option value="bow">Bow</option>
+            <option value="catalyst">Catalyst</option>
+            <option value="claymore">Claymore</option>
+            <option value="polearm">Polearm</option>
+        </select>
 
-    <script src="auth.js"></script>
+        <label for="element-filter">Element:</label>
+        <select id="element-filter">
+            <option value="all">All</option>
+            <option value="anemo">Anemo</option>
+            <option value="geo">Geo</option>
+            <option value="electro">Electro</option>
+            <option value="dendro">Dendro</option>
+            <option value="pyro">Pyro</option>
+            <option value="hydro">Hydro</option>
+            <option value="cryo">Cryo</option>
+        </select>
+    </div>
+
+    <div class="characters-container">
+        <a href="amber-character.html" class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro">
+            <img src="https://static.wikia.nocookie.net/dubbing9585/images/3/30/Kelly_Baskin.png/revision/latest?cb=20210303200116" class="character-image">
+            <h2>Kelly Baskin</h2>
+            <p><strong>Amber's VA</strong></p>
+            <p><strong>Birthday:</strong> June 26, 1991</p>
+            <p><strong>Based:</strong> Los Angeles</p>
+            <p><strong>Height:</strong> 5'8 (1.73m)</p>
+        </a>
+
+    <script src="./auth.js"></script>
+    <script src="./characscript.js"></script>
     </body>

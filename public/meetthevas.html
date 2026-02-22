@@ -62,21 +62,43 @@
             <option value="hydro">Hydro</option>
             <option value="cryo">Cryo</option>
         </select>
+
+        <label for="nationality-filter">Nationality:</label>
+        <select id="nationality-filter">
+            <option value="all">All</option>
+            <option value="english">English</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="chinese">Chinese</option>
+        </select>
     </div>
 
     <div class="characters-container">
         <a href="amber-character.html" class="character-card" id="amber"
                 data-nation="mondstadt" 
                 data-weapon="bow" 
-                data-element="pyro">
+                data-element="pyro"
+                data-nationality="english">
             <img src="https://static.wikia.nocookie.net/dubbing9585/images/3/30/Kelly_Baskin.png/revision/latest?cb=20210303200116" class="character-image">
             <h2>Kelly Baskin</h2>
-            <p><strong>Amber's VA</strong></p>
+            <p><strong>Amber's VA in English Dub</strong></p>
             <p><strong>Birthday:</strong> June 26, 1991</p>
             <p><strong>Based:</strong> Los Angeles</p>
             <p><strong>Height:</strong> 5'8 (1.73m)</p>
         </a>
+        <div class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro"
+                data-nationality="japanese">
+            <img src="https://i.namu.wiki/i/lJs6iQ7KpYjLB4DzbIzu_vgFhWe5X7vG7eA0srI6Nqr7fmTmxxX2jGV8ukSrLTOshHpeasaBoN0BtXYhMp6j_A.webp" class="character-image">
+            <h2>Manaka Iwami</h2>
+            <p><strong>Amber's VA in Japanese Dub</strong></p>
+            <p><strong>Birthday:</strong> April 30, 1998</p>
+            <p><strong>Based:</strong> Saitama Prefecture, Japan</p>
+            <p><strong>Height:</strong> 5′2 (1.58 m)</p>
+        </div>
 
     <script src="./auth.js"></script>
-    <script src="./characscript.js"></script>
+    <script src="./vas.js"></script>
     </body>

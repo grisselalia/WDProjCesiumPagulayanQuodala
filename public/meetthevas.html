@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta viewport content="width=device-width, initial-scale=1.0">
+    <title>The Traveler’s Guide to Teyvat</title>
+    <link rel="icon" type = "image/png" href = "../assets/icon.png">
+    <link rel="stylesheet" href="./meetthevasstylesheet.css">
+
+</head>
+<body>
+    <div id="uppermargin">
+        <div class="auth-links" id="authArea">
+        <a href="log-in.html">sign in</a>
+        <span>|</span>
+        <a href="sign-up.html">sign up</a>
+        </div>
+        <img src="../assets/icon.png" left-align style="margin-left:100px; width:150px;height:150px;">
+        <h1>The Traveler's Guide to Teyvat</h1>
+        <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
+    </div>
+
+    <div class="nav">
+        <div class="nav-container">
+            <a class="nav-item" href="../index.html" data-tooltip="go to the home page">Home Page</a>
+            <a class="nav-item" href="./characters.html" data-tooltip="explore character profiles">Characters</a>
+            <a class="nav-item" href="./builds.html" data-tooltip="browse different builds">Builds</a>
+            <a class="nav-item" href="./tips.html" data-tooltip="helpful tips and tricks">Tips</a>
+            <a class="nav-item" href="./tutorial.html" data-tooltip="step-by-step guides">Tutorials</a>
+            <a class="nav-item" href="./nations.html" data-tooltip="learn about the nations">Nations</a>
+            <a class="nav-item" href="./tcg.html" data-tooltip="play genshin's card game">TCG</a>
+            <a class="nav-item" href="./meetthevas.html" data-tooltip="meet the people behind ur favs">VAs</a>
+            <a class="nav-item ask-source" href="./sources.html" data-tooltip="access source information">Sources</a>
+        </div>
+    </div>
+    <div class="filter-section">
+        <label for="nation-filter">Nation:</label>
+        <select id="nation-filter">
+            <option value="all">All</option>
+            <option value="mondstadt">Mondstadt</option>
+            <option value="liyue">Liyue</option>
+            <option value="inazuma">Inazuma</option>
+            <option value="sumeru">Sumeru</option>
+            <option value="nodkrai">Nod-Krai</option>
+        </select>
+        
+        <label for="weapon-filter">Weapon:</label>
+        <select id="weapon-filter">
+            <option value="all">All</option>
+            <option value="sword">Sword</option>
+            <option value="bow">Bow</option>
+            <option value="catalyst">Catalyst</option>
+            <option value="claymore">Claymore</option>
+            <option value="polearm">Polearm</option>
+        </select>
+
+        <label for="element-filter">Element:</label>
+        <select id="element-filter">
+            <option value="all">All</option>
+            <option value="anemo">Anemo</option>
+            <option value="geo">Geo</option>
+            <option value="electro">Electro</option>
+            <option value="dendro">Dendro</option>
+            <option value="pyro">Pyro</option>
+            <option value="hydro">Hydro</option>
+            <option value="cryo">Cryo</option>
+        </select>
+
+        <label for="nationality-filter">Dub:</label>
+        <select id="nationality-filter">
+            <option value="all">All</option>
+            <option value="english">English</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="chinese">Chinese</option>
+        </select>
+    </div>
+
+    <div class="characters-container">
+        <a href="amber-character.html" class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro"
+                data-nationality="english">
+            <img src="https://static.wikia.nocookie.net/dubbing9585/images/3/30/Kelly_Baskin.png/revision/latest?cb=20210303200116" class="character-image">
+            <h2>Kelly Baskin</h2>
+            <p><strong>Amber's VA in English Dub</strong></p>
+            <p><strong>Birthday:</strong> June 26, 1991</p>
+            <p><strong>Based:</strong> Los Angeles</p>
+            <p><strong>Height:</strong> 5'8 (1.73m)</p>
+        </a>
+        <div class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro"
+                data-nationality="japanese">
+            <img src="https://i.namu.wiki/i/lJs6iQ7KpYjLB4DzbIzu_vgFhWe5X7vG7eA0srI6Nqr7fmTmxxX2jGV8ukSrLTOshHpeasaBoN0BtXYhMp6j_A.webp" class="character-image">
+            <h2>Manaka Iwami</h2>
+            <p><strong>Amber's VA in Japanese Dub</strong></p>
+            <p><strong>Birthday:</strong> April 30, 1998</p>
+            <p><strong>Based:</strong> Saitama Prefecture, Japan</p>
+            <p><strong>Height:</strong> 5′2 (1.58 m)</p>
+        </div>
+        <div class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro"
+                data-nationality="chinese">
+            <img src="https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fv4%2Factor%2F9125829%2Fphoto%2F661339f000be3.jpg&w=640&q=75" class="character-image">
+            <h2>Cai Shujin</h2>
+            <p><strong>Amber's VA in Chinese Dub</strong></p>
+            <p><strong>Birthday:</strong> April 30, 1996</p>
+            <p><strong>Based:</strong> China</p>
+            <p><strong>Height:</strong> (not known)</p>
+        </div>
+        <div class="character-card" id="amber"
+                data-nation="mondstadt" 
+                data-weapon="bow" 
+                data-element="pyro"
+                data-nationality="korean">
+            <img src="https://static.wikia.nocookie.net/runningmananimation/images/f/f9/Profile_-_Kim_Yeon-Woo.jpg/revision/latest?cb=20221101222103" class="character-image">
+            <h2>Kim Yeon Woo</h2>
+            <p><strong>Amber's VA in Korean Dub</strong></p>
+            <p><strong>Birthday:</strong> August 24, 1988</p>
+            <p><strong>Based:</strong> Korea</p>
+            <p><strong>Height:</strong> (not known)</p>
+        </div>
+        <div class="character-card" id="kaeya"
+                data-nation="mondstadt" 
+                data-weapon="sword" 
+                data-element="cryo"
+                data-nationality="english">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWjC4EYijjOQTnIzQZyaWfn-S33g_nIxQ1QA&s" class="character-image">
+            <h2>Josey Montana McCoy</h2>
+            <p><strong>Kaeya's VA in English Dub</strong></p>
+            <p><strong>Birthday:</strong> (not known)</p>
+            <p><strong>Based:</strong> Los Angeles</p>
+            <p><strong>Height:</strong> 5'6 (1.68m)</p>
+        </div>
+        <div class="character-card" id="kaeya"
+                data-nation="mondstadt" 
+                data-weapon="sword" 
+                data-element="cryo"
+                data-nationality="japanese">
+            <img src="https://static.wikia.nocookie.net/seiyuu/images/2/25/Toriumi_Kohsuke.png/revision/latest/scale-to-width-down/1200?cb=20210901033343" class="character-image">
+            <h2>Toriumi Kosuke</h2>
+            <p><strong>Kaeya's VA in Japanese Dub</strong></p>
+            <p><strong>Birthday:</strong> May 16, 1973</p>
+            <p><strong>Based:</strong> Chigasaki, Japan</p>
+            <p><strong>Height:</strong> 5′7 (1.70 m)</p>
+        </div>
+        
+
+    <script src="./auth.js"></script>
+    <script src="./vas.js"></script>
+    </body>

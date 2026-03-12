@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta viewport content="width=device-width, initial-scale=1.0">
     <title>The Traveler’s Guide to Teyvat</title>
-    <link rel="icon" type = "image/png" href = "./assets/icon.png">
-    <link rel="icon" type="image/png" href="../assets/icon.png">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="./mondstadtstylesheet.css">
+    <link rel="icon" type = "image/png" href = "../assets/icon.png">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="tcg.css">
 </head>
-
-<body class="mondstadt">
-
-<div id="uppermargin">
-    <div class="auth-links" id="authArea">
+<body>
+    <div id="uppermargin">
+        <div class="auth-links" id="authArea">
         <a href="log-in.html">sign in</a>
         <span>|</span>
         <a href="sign-up.html">sign up</a>
         </div>
-    <img src="../assets/icon.png" style="margin-left:100px; width:150px;height:150px;">
-    <div>
+        <img src="../assets/icon.png" left-align style="margin-left:100px; width:150px;height:150px;">
         <h1>The Traveler's Guide to Teyvat</h1>
         <p>Unraveling the Secrets of Teyvat, One Traveler at a Time</p>
     </div>
-</div>
 
     <div class="nav">
         <div class="nav-container">
@@ -39,31 +33,29 @@
         </div>
     </div>
 
-<div class="nation-container">
+    <div class="heading">
+    <h3 style="text-align:center;">read before you play → 
+        <a href="tcg-tut.html"> TCG tutorial</a>
+    </h3>
+    </div>
 
-    <img 
-        src="https://staticg.sportskeeda.com/editor/2023/01/40c81-16732644246874-1920.jpg" 
-        alt="Mondstadt City"
-        class="nation-image"
-    >
+<!-- i lowk wanna make the cards have imgs -->
 
-    <div class="nation-description">
-        <h2>Mondstadt</h2>
-        <p>
-            A city of freedom that lies in the northeast of Teyvat.
-            From amongst mountains and wide-open plains, carefree
-            breezes carry the scent of dandelions — a gift from the
-            Anemo God, Barbatos — across Cider Lake to Mondstadt,
-            which sits on an island in the middle of the lake.
-        </p>
-        <p> The God Barbatos leaves his children to rule themselves.</p>
+    <div id="teamSelection">
+    <h2 style="color:aliceblue">Select Your 3 Characters</h2>
+    <div id="availableCharacters" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
+    <button id="startGameBtn">Start Game</button>
     </div>
 
 </div>
 
-<footer>
-    <a href="#">Download the App</a>
-</footer>
+    <div class="tcg-container" style="display: none;">
+        <!-- insert code... kaya ko'to -->
+    </div>
+
+
+<script src="tcg-game.js"></script>
+<script src="tcg-ui.js"></script>
+<script src="tcg.js"></script>
 <script src="auth.js"></script>
 </body>
-</html>

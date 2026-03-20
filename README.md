@@ -67,5 +67,13 @@ This website aims to help Genshin Impact players navigate their way to success i
 actual tcg game layout
 ![alt text](https://upload.wikimedia.org/wikipedia/en/9/96/Genius_Invokation_TCG_gameplay.jpg)
 
-**change password**
-![alt text](image.png)
+
+#  Cs - Pagulayan, Quodala Q4 Project Proposal Update Plan
+## The Traveler’s Guide to Teyvat
+
+# FINAL MODIFICATION PROPOSAL
+
+### narrative 
+Since the localStorage will be used for the sign-ups, we will implement a log-out feature (removing data) and a change password / username feature (updating data). If an account is signed in, there will be an option to view the data of your account such as email, username, password, and all other data. It will have options to change specific data and also have a log out button at the bottom.
+
+### wireframe

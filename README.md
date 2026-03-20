@@ -77,3 +77,8 @@ actual tcg game layout
 Since the localStorage will be used for the sign-ups, we will implement a log-out feature (removing data) and a change password / username feature (updating data). If an account is signed in, there will be an option to view the data of your account such as email, username, password, and all other data. It will have options to change specific data and also have a log out button at the bottom.
 
 ### wireframe
+**change password in log-in interface**
+![alt text](assets/12.png)
+
+**account information to edit**
+![alt text](assets/13.png)

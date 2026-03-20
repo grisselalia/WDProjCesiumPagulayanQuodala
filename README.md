@@ -66,3 +66,6 @@ This website aims to help Genshin Impact players navigate their way to success i
 
 actual tcg game layout
 ![alt text](https://upload.wikimedia.org/wikipedia/en/9/96/Genius_Invokation_TCG_gameplay.jpg)
+
+**change password**
+![alt text](image.png)

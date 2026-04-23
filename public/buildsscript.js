@@ -8,11 +8,9 @@
             for (let i = 0; i < items.length; i++) {
                 let itemText = items[i].textContent.toLowerCase();
                 if (itemText.indexOf(input) > -1) {
-                    items[i].style.display = ''; // shows matching charac
+                    items[i].style.display = ""; // shows matching charac
                 } else {
-                    items[i].style.display = 'none'; // hides non-matching characs
+                    items[i].style.display = "none"; // hides non-matching characs
                 }
             }
         }
-
-// NOT WORKING YET,, THIS IS A WORK IN PROGRESS..! *cries*

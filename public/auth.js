@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-      users[email] = password;
+      users[email] = {
+          email: email,
+          password: password,
+          username: email.split("@")[0],
+          phone: ""
+      };
       localStorage.setItem("users", JSON.stringify(users));
 
       alert("Sign up successful!");
@@ -67,8 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("logoutBtn").addEventListener("click", function() {
       localStorage.removeItem("currentUser");
       alert("Logged out!");
-      window.location.href = "../index.html";
+      window.location.href = "account.html";
     });
   }
 
 });
+
